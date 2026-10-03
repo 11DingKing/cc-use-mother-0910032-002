@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "product": "服务记录防重复归档",
+  "source_context": "当前 GitHub 账号内通过正式容器验证的 Python 后端项目群",
+  "actors": [
+    "文博中心运营员",
+    "志愿者",
+    "监护人",
+    "场馆负责人"
+  ],
+  "states": [
+    "草拟",
+    "待核验",
+    "已确认",
+    "执行中",
+    "已归档"
+  ],
+  "invariants": [
+    "来源指纹谱系",
+    "身份候选匹配",
+    "人工合并确认",
+    "归档更正事件"
+  ],
+  "sample_cases": [
+    {
+      "case_id": "0910032-002-A",
+      "actor": "文博中心运营员",
+      "state": "草拟"
+    },
+    {
+      "case_id": "0910032-002-B",
+      "actor": "场馆负责人",
+      "state": "待核验"
+    }
+  ],
+  "tags": [
+    "service-record",
+    "deduplication"
+  ]
+}
